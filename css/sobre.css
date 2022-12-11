@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;   /** Reset REMS-62.5% **/    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Global **/
+img {
+    max-width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;    
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{    
+    text-align: center;
+}
+
+.d-block{
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+/** Navegacion **/
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;    
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {   
+        display: inline-block;
+        font-size: 1.8rem; /** = 18px **/
+        margin-right: 2rem;
+    }
+    .navegacion:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #d0fc85;
+}
+
+.navegacion a:last-of-type {    
+    margin-right: 0;
+}
+
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;    
+    }
+}
+
+.icono{    
+    text-align: center;
+}
+
+@media (min-width: 768px) {    
+    .icono{
+        flex-basis: calc(33.3% - 1rem);
+        text-align: center;
+    }
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+
+/** Footer **/
+.site-footer {
+    background-color: #2cb94a;
+    margin: 0;
+}
+
+.container-footer {
+    padding: 3rem 0;    
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.site-footer {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer {
+        display: block;
+    }
+    
+}
+
+.copyright {
+    margin: 0;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        text-align: justify;
+    }
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
